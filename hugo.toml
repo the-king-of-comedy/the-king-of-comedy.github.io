@@ -1,0 +1,15 @@
+baseURL = 'https://the-king-of-comedy.github.io/'
+languageCode = 'zh-cn'
+title = 'the king of comedy'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
+    displayFullContent = false
+    # 开启搜索和标签功能
+    ShowReadingTime = true
+    ShowTagCloud = true
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"] # 搜索功能需要 JSON 输出
