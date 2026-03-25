@@ -1,6 +1,6 @@
 +++
 date = '2026-03-25T15:15:53+08:00'
-draft = true
+draft = false
 title = '使用SSH方式克隆github项目'
 +++
 
