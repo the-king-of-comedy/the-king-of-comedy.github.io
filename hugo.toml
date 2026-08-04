@@ -8,10 +8,7 @@ enableRobotsTXT = true
 [params]
     defaultTheme = "auto"
     showCodeCopyButtons = true
-    # 开启搜索功能
     showReadingTime = true
-    showPostNavLinks = true
-    showToc = true
     DateFormat = "2006-01-02 15:04:05"
     description = '记录技术学习与日常折腾的个人博客'
 
@@ -19,7 +16,7 @@ enableRobotsTXT = true
     tag = "tags"
 
 [outputs]
-    home = ["HTML", "RSS", "JSON"] # 搜索功能需要 JSON 输出
+    home = ["HTML", "RSS", "JSON"]
 
 [[menu.main]]
     identifier = "search"
