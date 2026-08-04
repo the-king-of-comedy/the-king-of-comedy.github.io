@@ -2,6 +2,7 @@
 date = '2026-03-25T16:48:18+08:00'
 draft = false
 title = 'Debian环境安装zsh'
+tags = ['Linux', 'Debian', 'zsh', 'Shell']
 +++
 
 ## 更新软件包列表

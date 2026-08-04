@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on the king of comedy</title>
+    <link>https://the-king-of-comedy.github.io/tags/linux/</link>
+    <description>Recent content in Linux on the king of comedy</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 27 Apr 2026 11:45:20 +0800</lastBuildDate>
+    <atom:link href="https://the-king-of-comedy.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxmox_VE_(PVE)_搭建</title>
+      <link>https://the-king-of-comedy.github.io/posts/proxmox_ve_pve_%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 27 Apr 2026 11:45:20 +0800</pubDate>
+      <guid>https://the-king-of-comedy.github.io/posts/proxmox_ve_pve_%E6%90%AD%E5%BB%BA/</guid>
+      <description>&lt;h2 id=&#34;1-安装前准备&#34;&gt;1. 安装前准备&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;镜像下载&lt;/strong&gt;：前往 &lt;a href=&#34;https://www.proxmox.com/en/downloads&#34;&gt;Proxmox 官网&lt;/a&gt; 下载最新的 ISO 镜像。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;启动盘制作&lt;/strong&gt;：使用 &lt;strong&gt;Rufus&lt;/strong&gt;（推荐 DD 模式）或 &lt;strong&gt;Ventoy&lt;/strong&gt; 将 ISO 写入 U 盘。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BIOS 设置&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;开启 &lt;strong&gt;Intel VT-x&lt;/strong&gt; 或 &lt;strong&gt;AMD-V&lt;/strong&gt; 虚拟化技术。&lt;/li&gt;
+&lt;li&gt;关闭 &lt;strong&gt;Secure Boot&lt;/strong&gt;（安全启动）。&lt;/li&gt;
+&lt;li&gt;设置 U 盘为第一启动项。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-pve-安装步骤&#34;&gt;2. PVE 安装步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;启动安装程序&lt;/strong&gt;：选择 &lt;code&gt;Install Proxmox VE (Graphical)&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;目标磁盘&lt;/strong&gt;：选择你要安装系统的硬盘。点击 &lt;code&gt;Options&lt;/code&gt; 可以配置文件系统（单盘建议 &lt;code&gt;ext4&lt;/code&gt;，多盘组阵列建议 &lt;code&gt;ZFS&lt;/code&gt;）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;时区与键盘&lt;/strong&gt;：Country 输入 &lt;code&gt;China&lt;/code&gt;，Timezone 选择 &lt;code&gt;Asia/Shanghai&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;密码与邮箱&lt;/strong&gt;：设置 root 密码（务必牢记）和通知邮箱。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;网络配置&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Management Interface&lt;/strong&gt;：选择你的物理网卡。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hostname&lt;/strong&gt;：例如 &lt;code&gt;pve.home&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IP Address&lt;/strong&gt;：设置一个固定的静态 IP（例如 &lt;code&gt;192.168.1.100&lt;/code&gt;）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gateway/DNS&lt;/strong&gt;：指向你的路由器 IP。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;确认安装&lt;/strong&gt;：完成后系统会自动重启，拨出 U 盘。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3-基础初始化配置&#34;&gt;3. 基础初始化配置&lt;/h2&gt;
+&lt;p&gt;安装完成后，通过浏览器访问 &lt;code&gt;https://你的IP:8006&lt;/code&gt;，忽略证书警告，使用 &lt;code&gt;root&lt;/code&gt; 和设置的密码登录。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Debian环境安装zsh</title>
+      <link>https://the-king-of-comedy.github.io/posts/debian%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85zsh/</link>
+      <pubDate>Wed, 25 Mar 2026 16:48:18 +0800</pubDate>
+      <guid>https://the-king-of-comedy.github.io/posts/debian%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85zsh/</guid>
+      <description>&lt;h2 id=&#34;更新软件包列表&#34;&gt;更新软件包列表&lt;/h2&gt;
+&lt;p&gt;首先，确保你的本地软件包索引是最新的：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装-zsh-及必要依赖&#34;&gt;安装 Zsh 及必要依赖&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;apt&lt;/code&gt; 安装 Zsh 以及后续配置 Oh My Zsh 所需的 &lt;code&gt;curl&lt;/code&gt; 和 &lt;code&gt;git&lt;/code&gt;：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install zsh curl git -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;验证安装&#34;&gt;验证安装&lt;/h2&gt;
+&lt;p&gt;安装完成后，确认 Zsh 已成功安装：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;zsh --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;设置-zsh-为默认-shell&#34;&gt;设置 Zsh 为默认 Shell&lt;/h2&gt;
+&lt;p&gt;默认情况下 Debian 使用 Bash。运行以下命令将当前用户的 Shell 切换为 Zsh：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chsh -s &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;which zsh&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt; 修改后需要&lt;strong&gt;注销并重新登录&lt;/strong&gt;（或重启系统），更改才会完全生效。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;初始配置&#34;&gt;初始配置&lt;/h2&gt;
+&lt;p&gt;当你第一次启动 Zsh 时（输入 &lt;code&gt;zsh&lt;/code&gt; 即可进入），会看到配置界面。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;建议选择选项 &lt;strong&gt;&lt;code&gt;2&lt;/code&gt;&lt;/strong&gt;：使用推荐的默认设置创建一个空的 &lt;code&gt;.zshrc&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装-oh-my-zsh&#34;&gt;安装 Oh My Zsh&lt;/h2&gt;
+&lt;p&gt;安装 Oh My Zsh 以获得强大的插件管理和主题支持：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sh -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;安装外部插件&#34;&gt;安装外部插件&lt;/h2&gt;
+&lt;p&gt;在 Oh My Zsh 框架下，执行以下命令克隆常用插件到自定义目录：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

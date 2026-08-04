@@ -2,6 +2,7 @@
 date = '2026-03-25T15:15:53+08:00'
 draft = false
 title = '使用SSH方式克隆github项目'
+tags = ['Git', 'GitHub', 'SSH']
 +++
 
 ## 1. 生成 SSH 密钥对

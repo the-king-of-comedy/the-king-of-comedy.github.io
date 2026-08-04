@@ -2,6 +2,7 @@
 date = '2026-04-27T11:45:20+08:00'
 draft = false
 title = 'Proxmox_VE_(PVE)_搭建'
+tags = ['Proxmox', 'PVE', '虚拟化', 'Linux']
 +++
 
 ## 1. 安装前准备
