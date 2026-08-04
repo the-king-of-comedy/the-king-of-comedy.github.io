@@ -2,6 +2,7 @@
 date = '2026-03-25T16:48:18+08:00'
 draft = false
 title = 'Debian环境安装zsh'
+description = '在 Debian 环境下安装 Zsh 并配置 Oh My Zsh，从更新软件源到设置默认 Shell 的完整步骤。'
 tags = ['Linux', 'Debian', 'zsh', 'Shell']
 +++
 

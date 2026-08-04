@@ -2,6 +2,7 @@
 date = '2026-04-27T13:39:20+08:00'
 draft = false
 title = '通过 WSL2 和 vs Code 搭建 Java 开发环境'
+description = '在 Windows 下通过 WSL2 和 VS Code 搭建 Java 开发环境，包括 JDK 安装、环境变量与扩展包配置。'
 tags = ['WSL', 'VS Code', 'Java', '开发环境']
 +++
 

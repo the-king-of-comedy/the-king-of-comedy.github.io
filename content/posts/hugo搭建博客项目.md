@@ -2,6 +2,7 @@
 date = '2026-08-04T10:21:56+08:00'
 draft = false
 title = 'Hugo搭建博客项目'
+description = '使用 Hugo 与 PaperMod 主题搭建个人博客的完整流程，包括环境准备、主题配置与常用维护命令。'
 tags = ['Hugo', '博客', '静态网站']
 +++
 

@@ -2,6 +2,7 @@
 date = '2026-04-27T11:45:20+08:00'
 draft = false
 title = 'Proxmox_VE_(PVE)_搭建'
+description = 'Proxmox VE (PVE) 虚拟化平台搭建教程，覆盖安装准备、安装步骤、初始化配置与存储网络进阶。'
 tags = ['Proxmox', 'PVE', '虚拟化', 'Linux']
 +++
 

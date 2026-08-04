@@ -17,12 +17,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive # 必须包含此项以拉取主题
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.159.0'
           extended: true
 
       - name: Build

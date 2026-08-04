@@ -2,6 +2,7 @@
 date = '2026-03-25T15:15:53+08:00'
 draft = false
 title = '使用SSH方式克隆github项目'
+description = '通过 SSH 方式克隆 GitHub 项目的教程：生成密钥、添加公钥、测试连接与克隆仓库。'
 tags = ['Git', 'GitHub', 'SSH']
 +++
 
