@@ -9,13 +9,11 @@ enableRobotsTXT = true
     defaultTheme = "auto"
     showCodeCopyButtons = true
     # 开启搜索功能
-    ShowReadingTime = true
-    ShowPostNavLinks = true
-    ShowToc = true
+    showReadingTime = true
+    showPostNavLinks = true
+    showToc = true
     DateFormat = "2006-01-02 15:04:05"
     description = '记录技术学习与日常折腾的个人博客'
-
-    homeInfoParams = { Title = 'the king of comedy', Content = '记录技术学习与日常折腾的个人博客，欢迎交流。' }
 
 [taxonomies]
     tag = "tags"
