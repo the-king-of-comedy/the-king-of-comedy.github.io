@@ -16,3 +16,9 @@ theme = 'PaperMod'
 
 [outputs]
     home = ["HTML", "RSS", "JSON"] # 搜索功能需要 JSON 输出
+
+[[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 10
