@@ -7,6 +7,11 @@ enableRobotsTXT = true
 
 [params]
     defaultTheme = "auto"
+    [params.assets]
+        favicon = "/favicon.png"
+        favicon16x16 = "/favicon.png"
+        favicon32x32 = "/favicon.png"
+        apple_touch_icon = "/favicon.png"
     showCodeCopyButtons = true
     showReadingTime = true
     DateFormat = "2006-01-02 15:04:05"
