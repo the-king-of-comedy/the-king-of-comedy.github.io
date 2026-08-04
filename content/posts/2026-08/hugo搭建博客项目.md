@@ -1,6 +1,6 @@
 +++
 date = '2026-08-04T10:21:56+08:00'
-draft = true
+draft = false
 title = 'Hugo搭建博客项目'
 +++
 
