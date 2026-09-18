@@ -6,7 +6,7 @@ description = '通过 SSH 方式克隆 GitHub 项目的教程：生成密钥、�
 tags = ['Git', 'GitHub', 'SSH']
 +++
 
-## 生成 SSH 密钥对
+## 1. 生成 SSH 密钥对
 
 首先，检查系统是否已有密钥，若没有则生成一对新的（公钥和私钥）。
 
